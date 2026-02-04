@@ -73,14 +73,18 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{ animationDelay: "0.6s" }}>
-            <Button size="lg" className="gap-2 glow-effect">
-              <Github size={20} />
-              View GitHub
-            </Button>
-            <Button size="lg" variant="outline" className="gap-2 gradient-border">
-              <Linkedin size={20} />
-              Connect on LinkedIn
-            </Button>
+            <a href="https://github.com/akterh" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="gap-2 glow-effect">
+                <Github size={20} />
+                View GitHub
+              </Button>
+            </a>
+            <a href="https://linkedin.com/in/akterh" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="gap-2 gradient-border">
+                <Linkedin size={20} />
+                Connect on LinkedIn
+              </Button>
+            </a>
           </div>
         </div>
       </div>
