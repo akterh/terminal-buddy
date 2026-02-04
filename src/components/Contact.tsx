@@ -75,14 +75,18 @@ export const Contact = () => {
               </div>
 
               <div className="flex gap-4">
-                <Button size="lg" className="flex-1 gap-2 glow-effect">
-                  <Github size={20} />
-                  GitHub
-                </Button>
-                <Button size="lg" variant="outline" className="flex-1 gap-2 gradient-border">
-                  <Linkedin size={20} />
-                  LinkedIn
-                </Button>
+                <a href="https://github.com/akterh" target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <Button size="lg" className="w-full gap-2 glow-effect">
+                    <Github size={20} />
+                    GitHub
+                  </Button>
+                </a>
+                <a href="https://linkedin.com/in/akterh" target="_blank" rel="noopener noreferrer" className="flex-1">
+                  <Button size="lg" variant="outline" className="w-full gap-2 gradient-border">
+                    <Linkedin size={20} />
+                    LinkedIn
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
