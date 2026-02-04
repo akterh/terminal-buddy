@@ -1,5 +1,4 @@
-import { ExternalLink, Sparkles, Calendar, MessageSquare, ShoppingBag, Users, Car, Utensils } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Sparkles, Calendar, MessageSquare, ShoppingCart, Users, Car, Utensils, Brain } from "lucide-react";
 
 const projects = [
   {
@@ -12,13 +11,22 @@ const projects = [
     color: "primary",
   },
   {
+    icon: Brain,
+    title: "MyKetoBrain",
+    company: "Dinnova AG",
+    location: "Switzerland",
+    description: "All-in-one keto diet app with 400+ specialist recipes, meal planning, and health tracking. Combines clinical expertise with personalized nutrition.",
+    highlights: ["Keto Recipes", "Meal Planning", "Health Tracking", "Nutrition AI"],
+    color: "accent",
+  },
+  {
     icon: Calendar,
     title: "LetsPlan",
     company: "Dinnova AG",
     location: "Switzerland",
     description: "Booking platform for daycare and educational programs with complex calendar simulation and payment integration.",
     highlights: ["Lead Developer", "Calendar System", "Payments", "Map Services"],
-    color: "accent",
+    color: "primary",
   },
   {
     icon: MessageSquare,
@@ -27,6 +35,15 @@ const projects = [
     location: "Switzerland",
     description: "Skill sharing platform with real-time communication via Socket.io and skill exchange without monetary transactions.",
     highlights: ["Real-time Chat", "Socket.io", "In-App Purchase", "Skill Exchange"],
+    color: "accent",
+  },
+  {
+    icon: ShoppingCart,
+    title: "ShopySwiss",
+    company: "Dinnova AG",
+    location: "Switzerland",
+    description: "Dynamic e-commerce platform with BLE-enabled smart fridge integration for seamless purchase experience and product delivery.",
+    highlights: ["E-commerce", "BLE Integration", "Smart Fridge", "Payment Module"],
     color: "primary",
   },
   {
