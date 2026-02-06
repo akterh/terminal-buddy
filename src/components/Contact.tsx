@@ -96,7 +96,7 @@ export const Contact = () => {
       {/* Footer */}
       <div className="mt-16 pt-8 border-t border-border text-center">
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Md. Akter Hossain. Built with passion for Flutter development.
+          © {new Date().getFullYear()} Md. Akter Hossain. All rights reserved.
         </p>
       </div>
     </section>
