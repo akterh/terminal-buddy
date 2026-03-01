@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { HireMeDialog } from "@/components/HireMeDialog";
 
 const navLinks = [
   { label: "Expertise", href: "#expertise" },
@@ -52,9 +53,11 @@ export const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button size="sm" className="glow-effect">
-              Hire Me
-            </Button>
+            <HireMeDialog>
+              <Button size="sm" className="glow-effect">
+                Hire Me
+              </Button>
+            </HireMeDialog>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -80,9 +83,11 @@ export const Navbar = () => {
                   {link.label}
                 </a>
               ))}
-              <Button size="sm" className="w-fit glow-effect">
-                Hire Me
-              </Button>
+              <HireMeDialog>
+                <Button size="sm" className="w-fit glow-effect">
+                  Hire Me
+                </Button>
+              </HireMeDialog>
             </div>
           </div>
         )}
