@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { HireMeDialog } from "@/components/HireMeDialog";
+import profileImg from "@/assets/profile.jpeg";
 
 const navLinks = [
   { label: "Expertise", href: "#expertise" },
@@ -34,8 +35,9 @@ export const Navbar = () => {
       <div className="container px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#" className="font-display text-xl font-bold">
-            <span className="gradient-text">AH</span>
+          <a href="#" className="flex items-center gap-2">
+            <img src={profileImg} alt="Akter Hossain" className="w-8 h-8 rounded-full object-cover border border-border" />
+            <span className="font-display text-sm font-bold gradient-text">Akter Hossain</span>
           </a>
 
           {/* Desktop Navigation */}
