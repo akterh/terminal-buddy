@@ -4,7 +4,7 @@ const experiences = [
   {
     company: "Dinnova AG LTD.",
     location: "Zurich, Switzerland",
-    role: "Software Engineer",
+    role: "Senior Software Engineer",
     period: "Sep 2023 - Present",
     description: "Leading development of multiple Flutter applications including AI-powered wellness apps, booking platforms, and social applications.",
     isCurrent: true,
