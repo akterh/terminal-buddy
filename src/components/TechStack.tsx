@@ -1,12 +1,12 @@
 const technologies = [
-  { name: "Dart", level: 95 },
-  { name: "Flutter", level: 95 },
-  { name: "BLoC Pattern", level: 90 },
-  { name: "Clean Architecture", level: 90 },
-  { name: "Firebase", level: 85 },
-  { name: "SQLite/Hive", level: 85 },
-  { name: "WebRTC/Socket.io", level: 80 },
-  { name: "Kotlin", level: 70 },
+  { name: "Dart", icon: "🎯", years: "4+" },
+  { name: "Flutter", icon: "💙", years: "4+" },
+  { name: "BLoC Pattern", icon: "🧱", years: "3+" },
+  { name: "Clean Architecture", icon: "🏗️", years: "3+" },
+  { name: "Firebase", icon: "🔥", years: "3+" },
+  { name: "SQLite / Hive", icon: "💾", years: "3+" },
+  { name: "WebRTC / Socket.io", icon: "📡", years: "2+" },
+  { name: "Kotlin", icon: "🟣", years: "2+" },
 ];
 
 const tools = [
@@ -34,30 +34,28 @@ export const TechStack = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
-          {/* Skills with Progress */}
-          <div className="space-y-6">
+          {/* Languages & Frameworks */}
+          <div>
             <h3 className="font-display text-xl font-semibold mb-6 flex items-center gap-3">
               <div className="w-8 h-1 bg-primary rounded-full" />
               Languages & Frameworks
             </h3>
-            {technologies.map((tech, index) => (
-              <div key={tech.name} className="group">
-                <div className="flex justify-between mb-2">
-                  <span className="font-medium text-sm">{tech.name}</span>
-                  <span className="text-muted-foreground text-sm">{tech.level}%</span>
+            <div className="grid grid-cols-2 gap-3">
+              {technologies.map((tech) => (
+                <div
+                  key={tech.name}
+                  className="group p-4 rounded-xl bg-secondary/50 border border-border hover:border-primary/30 transition-all duration-300 hover:bg-secondary/80"
+                >
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg mt-0.5">{tech.icon}</span>
+                    <div>
+                      <span className="font-medium text-sm block text-foreground">{tech.name}</span>
+                      <span className="text-xs text-muted-foreground">{tech.years} years</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="h-2 bg-muted rounded-full overflow-hidden">
-                  <div
-                    className="h-full rounded-full transition-all duration-1000 ease-out"
-                    style={{
-                      width: `${tech.level}%`,
-                      background: "var(--gradient-primary)",
-                      animationDelay: `${0.1 * index}s`,
-                    }}
-                  />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           {/* Tools Grid */}
@@ -66,7 +64,7 @@ export const TechStack = () => {
               <div className="w-8 h-1 bg-accent rounded-full" />
               Tools & Platforms
             </h3>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3">
               {tools.map((tool) => (
                 <div
                   key={tool}
@@ -76,7 +74,7 @@ export const TechStack = () => {
                 </div>
               ))}
             </div>
-            
+
             {/* Paradigms */}
             <div className="mt-8 p-6 rounded-2xl card-elevated border border-border">
               <h4 className="font-display font-semibold mb-4">Design Patterns</h4>
