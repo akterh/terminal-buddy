@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite", 
+    "dev": "vite",
     "build": "vite build",
     "deploy": "vite build --config vite.config.wrangler.ts && npx wrangler deploy",
     "preview": "vite build --config vite.config.wrangler.ts && npx wrangler dev"
   },
   "dependencies": {
+    "@cloudflare/vite-plugin": "^1.26.0",
     "@hookform/resolvers": "^3.10.0",
     "@radix-ui/react-accordion": "^1.2.11",
     "@radix-ui/react-alert-dialog": "^1.1.14",
