@@ -26,7 +26,7 @@ export function HeroSection() {
               className="mt-6 leading-[1.75] max-w-[54ch] text-[17px] text-[#2e2e2b]"
             >
               I'm <strong style={{ color: "var(--ink)", fontWeight: 600 }}>{PROFILE.name}</strong>,
-              a {PROFILE.role} with 5.5+ years of professional experience building and shipping
+              a {PROFILE.role} with 5.5+ years of professional experience building and shipping 8
               production iOS and Android applications for international teams in Switzerland and Canada.
             </p>
             <p
@@ -44,7 +44,7 @@ export function HeroSection() {
             >
               {[
                 { value: "5.5+", label: "Years Experience" },
-                { value: "6", label: "Shipped Apps" },
+                { value: "8", label: "Shipped Apps" },
                 { value: "5", label: "Live Apps Maintained" },
                 { value: "4", label: "Team Members Led" },
               ].map((stat) => (

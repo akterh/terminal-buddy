@@ -8,8 +8,8 @@ export const PROFILE = {
   tagline: "Building production mobile apps with AI, real-time systems, and Clean Architecture.",
   heroEyebrow: "Senior Flutter Engineer",
   summary:
-    "Senior Flutter Engineer with 5.5+ years of professional experience building and shipping production iOS and Android applications for international teams in Switzerland and Canada. Experienced in end-to-end mobile development, technical ownership, Clean Architecture, BLoC, REST APIs, real-time communication, AI integrations, BLE hardware, maps, payments, subscriptions, offline-first storage, testing, and CI/CD. Shipped 6 production apps and worked across multiple products simultaneously, collaborating remotely with international stakeholders across time zones.",
-  bio: "Senior Flutter Engineer with 5.5+ years of experience shipping production iOS & Android apps across Switzerland, Canada, and Bangladesh. Specializing in AI integrations, real-time communication, and BLE hardware.",
+    "Senior Flutter Engineer with 5.5+ years of professional experience building and shipping production iOS and Android applications for international teams in Switzerland and Canada. Experienced in end-to-end mobile development, technical ownership, Clean Architecture, BLoC, REST APIs, real-time communication, AI integrations, BLE hardware, maps, payments, subscriptions, offline-first storage, testing, and CI/CD. Shipped 8 production apps and worked across multiple products simultaneously, collaborating remotely with international stakeholders across time zones.",
+  bio: "Senior Flutter Engineer with 5.5+ years of experience shipping 8 production iOS & Android apps across Switzerland, Canada, and Bangladesh. Specializing in AI integrations, real-time communication, and BLE hardware.",
   role: "Senior Flutter Engineer",
   company: "Dinnova AG (Zurich, Switzerland — Remote)",
   location: "Dhaka, Bangladesh",
